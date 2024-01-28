@@ -17,7 +17,7 @@ class Solution {
             if (isset($check_array[$num])) {
                 return true;
             }
-            $check_array[$num] = 1;
+            $check_array[$num] = true;
         }
         return false;
     }
@@ -25,5 +25,4 @@ class Solution {
 // @lc code=end
 
 // What I learned
-// 適当な値を入れるときは1のように数値を入れる。
-// ''のように空文字を入れるとメモリを消費する。
+// check_arrayではなく、mapという命名がよいかもしれない
